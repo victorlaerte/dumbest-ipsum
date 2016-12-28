@@ -15,20 +15,20 @@
                                 "caption":"Dilmes Ipsum...",
                                 "children":
                                 [
-                                    {"command": "dilmes_ipsum", "caption": "1 dumb phrase", "args":{"qty":1, "person":"dilma"}},
-                                    {"command": "dilmes_ipsum", "caption": "2 dumb phrases", "args":{"qty":2, "person":"dilma"}},
-                                    {"command": "dilmes_ipsum", "caption": "4 dumb phrases", "args":{"qty":4, "person":"dilma"}},
-                                    {"command": "dilmes_ipsum", "caption": "complete speech!", "args":{"qty":8, "person":"dilma"}}
+                                    {"command": "dumbest_ipsum", "caption": "1 dumb phrase", "args":{"qty":1, "person":"dilma"}},
+                                    {"command": "dumbest_ipsum", "caption": "2 dumb phrases", "args":{"qty":2, "person":"dilma"}},
+                                    {"command": "dumbest_ipsum", "caption": "4 dumb phrases", "args":{"qty":4, "person":"dilma"}},
+                                    {"command": "dumbest_ipsum", "caption": "complete speech!", "args":{"qty":8, "person":"dilma"}}
                                 ]    
                             },
                             {
                                 "caption":"Trump Ipsum...",
                                 "children":
                                 [
-                                    {"command": "dilmes_ipsum", "caption": "1 dumb phrase", "args":{"qty":1, "person":"trump"}},
-                                    {"command": "dilmes_ipsum", "caption": "2 dumb phrases", "args":{"qty":2, "person":"trump"}},
-                                    {"command": "dilmes_ipsum", "caption": "4 dumb phrases", "args":{"qty":4, "person":"trump"}},
-                                    {"command": "dilmes_ipsum", "caption": "complete speech!", "args":{"qty":8, "person":"trump"}}
+                                    {"command": "dumbest_ipsum", "caption": "1 dumb phrase", "args":{"qty":1, "person":"trump"}},
+                                    {"command": "dumbest_ipsum", "caption": "2 dumb phrases", "args":{"qty":2, "person":"trump"}},
+                                    {"command": "dumbest_ipsum", "caption": "4 dumb phrases", "args":{"qty":4, "person":"trump"}},
+                                    {"command": "dumbest_ipsum", "caption": "complete speech!", "args":{"qty":8, "person":"trump"}}
                                 ]    
                             }
                         ]    

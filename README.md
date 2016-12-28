@@ -41,7 +41,7 @@ Report bugs here, and I will do my best to repair them (or better still - make t
 
 ## Atom version
 
-If you are interested in Atom's version checkout this [plugin of dilmes ipsum](https://github.com/thiagoh/atom-dilmes-ipsum)
+If you are interested in Atom's version checkout this [plugin of Dilmes Ipsum](https://github.com/thiagoh/atom-dilmes-ipsum)
 
 ## Visual Studio Code version
 
@@ -55,5 +55,7 @@ Coming soon.
 | [Thiago Andrade](https://github.com/thiagoh) | [Victor Laerte](http://www.victorlaerte.com) | [Adriano Interaminse](https://github.com/interaminense) |
 
 ---
+
+Dumbest Ipsum is a fork of <a href="http://thiagoh.github.io/sublime-dilmes-ipsum" target="_blank">Dilmês Ipsum</a>!
 
 If you have some problems or improvements with it, contact me via GitHub.

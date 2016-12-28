@@ -5,7 +5,7 @@ import sublime_plugin
 import random
 import re
 
-class DilmesIpsumCommand(sublime_plugin.TextCommand):
+class DumbestIpsumCommand(sublime_plugin.TextCommand):
 
     s1 = "dilma"
     s2 = "dilmes"

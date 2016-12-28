@@ -2,48 +2,48 @@
 
   {
     "caption": "DilmesIpsum: 1 dumb phrase",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 1 , "person":"dilma"}}
   },
 
   {
     "caption": "DilmesIpsum: 2 dumb phrases",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 2 , "person":"dilma"}}
   },
 
   {
     "caption": "DilmesIpsum: 4 dumb phrases",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 4 , "person":"dilma"}}
   },
 
   {
     "caption": "DilmesIpsum: complete speech",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 8 , "person":"dilma"}}
   },
   {
     "caption": "TrumpIpsum: 1 dumb phrase",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 1 , "person":"trump"}}
   },
 
   {
     "caption": "TrumpIpsum: 2 dumb phrases",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 2 , "person":"trump"}}
   },
 
   {
     "caption": "TrumpIpsum: 4 dumb phrases",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 4 , "person":"trump"}}
   },
 
   {
     "caption": "TrumpIpsum: complete speech",
-    "command": "dilmes_ipsum",
+    "command": "dumbest_ipsum",
     "args": {"qty": 8 , "person":"trump"}}
   }
 ]
