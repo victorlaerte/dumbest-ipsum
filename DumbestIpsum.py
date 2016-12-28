@@ -71,7 +71,7 @@ class DumbestIpsumCommand(sublime_plugin.TextCommand):
             elif self.view.substr(r2).lower() == 'dilmes':
                 self.view.erase(edit, r2)
                 selection = sublime.Region(r2.begin())
-            elif self.view.substr(r2).lower() == 'trump':
+            elif self.view.substr(r3).lower() == 'trump':
                 self.view.erase(edit, r3)
                 selection = sublime.Region(r3.begin())
             else:
