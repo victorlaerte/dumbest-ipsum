@@ -1,0 +1,16 @@
+[
+	{ "keys": ["alt+shift+d"], "command": "dilmes_ipsum", "args":{"qty":1, "person":"dilma"}},
+
+	{ "keys": ["tab"], "command": "dilmes_ipsum", "args":{"qty":1, "person":"dilma"}, "context": 
+	 	[
+	 		 { "key": "preceding_text", "operator": "regex_contains", "operand": ".*\\b(dilma|dilmes)$", "match_all": true }
+	 	]
+	 },
+ 	{ "keys": ["alt+shift+t"], "command": "dilmes_ipsum", "args":{"qty":1, "person":"trump"}},
+
+	{ "keys": ["tab"], "command": "dilmes_ipsum", "args":{"qty":1, "person":"trump"}, "context": 
+	 	[
+	 		 { "key": "preceding_text", "operator": "regex_contains", "operand": ".*\\b(trump)$", "match_all": true }
+	 	]
+	 }
+]
