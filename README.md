@@ -28,7 +28,7 @@ Alternatively, you can also type `dilma`, `dilmes` or `trump` followed by a `TAB
 
 ### Package Control
 
-The easiest way to install this is with [Package Control](https://packagecontrol.io/packages/Dilmes%20Ipsum).
+The easiest way to install this is with [Package Control](https://packagecontrol.io/packages/Dumbest%20Ipsum).
 
  * If you just went and installed Package Control, you probably need to restart Sublime Text before doing this next bit.
  * Bring up the Command Palette (Command+Shift+P on OS X, Control+Shift+P on Linux/Windows).
