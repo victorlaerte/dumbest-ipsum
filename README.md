@@ -8,7 +8,7 @@ An extension for Sublime Text 2 and 3! It allows you to insert the best Dumbest 
 
 ## Avaliables Ipsum
 * Dilmês Ipsum - It uses some popular phrases from [Brazilian President Dilma Rousseff](https://en.wikipedia.org/wiki/Dilma_Rousseff)
-* Trump Ipsum - It uses some popular phrases from [USA President Donald Trump](https://pt.wikipedia.org/wiki/Donald_Trump)
+* Trump Ipsum - It uses some popular phrases from [USA President Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump)
 
 Select how much text you want from the menu item in `Edit->Text->Dumbest Ipsum` or on the right click menu in `Dilmes Ipsum` or `Trump Ipsum`.
 
