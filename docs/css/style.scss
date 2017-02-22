@@ -1,3 +1,36 @@
-body {
-    color: red;
+$bg-a: #070707;
+$bg-b: #1e114e;
+html {
+    background-color: $bg-b;
+}
+
+.head-a {
+    background-color: $bg-a;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+    &.flex--space-between {
+        justify-content: space-between;
+    }
+}
+
+.trump-caricature {
+    position: relative;
+    top: 50px;
+    width: 283px;
+    height: 685px;
+    .trump-caricature__pulpit,
+    .trump-caricature__body {
+        position: absolute;
+    }
+    .trump-caricature__pulpit {
+        top: 100px;
+        left: -155px;
+    }
+    .trump-caricature__body {
+        top: 0;
+        left: 0;
+    }
 }

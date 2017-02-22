@@ -8,6 +8,9 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!--Import Fontello Fonts-->
     <link type="text/css" rel="stylesheet" href="fonts/fontello/css/fontello.css" media="screen" />
+    <!-- Animate css -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen" />
+
     <link type="text/css" rel="stylesheet" href="css/style.min.css" media="screen" />
     <link type="text/css" rel="stylesheet" href="css/responsive.min.css" media="screen" />
 
@@ -17,7 +20,30 @@
     <title>Trump Ipsum</title>
 </head>
 
-<body ng-controller="mainCtrl">
+<body ng-controller="mainCtrl" ng-cloak class="ng-cloak">
+
+    <header class="head-a">
+        <div class="container flex flex--space-between">
+            <div class="trump-caricature">
+                <div class="trump-caricature__body">
+                    <img ng-hide="bodyTrump.src" class="animated flipInY" src="img/head-trump-1.png" alt="">
+                    <img class="animated {{bodyTrump.animate}}" src="img/{{bodyTrump.src}}" alt="">
+                </div>
+                <div class="trump-caricature__pulpit">
+                    <img src="img/pulpit.png" alt="">
+                </div>
+            </div>
+            <div class="phrases">
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(1); bodyTrump.animate = ''" ng-click="changePhrase(1)">1</a>
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(2); bodyTrump.animate = ''" ng-click="changePhrase(2)">2</a>
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(3); bodyTrump.animate = ''" ng-click="changePhrase(3)">3</a>
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(4); bodyTrump.animate = ''" ng-click="changePhrase(4)">4</a>
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(5); bodyTrump.animate = ''" ng-click="changePhrase(5)">5</a>
+                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(6); bodyTrump.animate = ''" ng-click="changePhrase(6)">6</a>
+                <a class="waves-effect waves-light btn">copy</a>
+            </div>
+        </div>
+    </header>
 
     <!--Angular jS-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
@@ -27,7 +53,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <!--Addthis-->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-500ef8864eff892c"></script>
+    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-500ef8864eff892c"></script>-->
     <!--Initalize Components Materializecss-->
     <script></script>
     <!--Google Analytics-->

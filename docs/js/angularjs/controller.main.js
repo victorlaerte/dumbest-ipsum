@@ -4,19 +4,17 @@
     app.controller('mainCtrl', ControllerCtrl)
 
     /** @ngInject */
-    function ControllerCtrl($scope, $window) {
+    function ControllerCtrl($scope) {
 
-        $scope.navbarToggleColor
+        $scope.bodyTrump = {
+            animate: 'flipInY',
+            src: 'head-trump-' + 1 + '.png'
+        }
 
-        angular.element($window).bind("scroll", function() {
-            if (this.pageYOffset >= 600) {
-                $scope.navbarToggleColor = true;
-            } else {
-                $scope.navbarToggleColor = false;
-            }
-            $scope.$apply();
-        });
-
+        $scope.changePhrase = function(number) {
+            $scope.bodyTrump.src = 'head-trump-' + number + '.png';
+            $scope.bodyTrump.animate = 'rubberBand';
+        }
     }
 
 }());
