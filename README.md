@@ -1,10 +1,10 @@
 <a href="#readme" ></a>
 
-# DumbestIpsum for [Sublime Text Editor](http://www.sublimetext.com/)
+# DumbestIpsum (A bundle with TrumpIpsum + DilmesIpsum) for [Sublime Text Editor](http://www.sublimetext.com/)
 
-Check out our <a href="http://thiagoh.github.io/sublime-dilmes-ipsum" target="_blank">GitHub Page</a>!
+Check out our <a href="http://www.victorlaerte.com/dumbest-ipsum/" target="_blank">GitHub Page</a>!
 
-An extension for Sublime Text 2 and 3! It allows you to insert the best Dumbest Lorem Ipsum in the editor via menu items or keyboard shortcuts.
+An extension for Sublime Text 2 and 3! It allows you to insert the best Lorem Ipsum Generator in the editor via menu items or keyboard shortcuts.
 
 ## Avaliables Ipsum
 * Dilmês Ipsum - It uses some popular phrases from [Brazilian President Dilma Rousseff](https://en.wikipedia.org/wiki/Dilma_Rousseff)
@@ -41,7 +41,7 @@ Report bugs here, and I will do my best to repair them (or better still - make t
 
 ## Atom version
 
-If you are interested in Atom's version checkout this [plugin of Dilmes Ipsum](https://github.com/thiagoh/atom-dilmes-ipsum)
+Coming soon.
 
 ## Visual Studio Code version
 
