@@ -1,12 +1,14 @@
 <a href="#readme" ></a>
 
-# DumbestIpsum (A bundle with TrumpIpsum + DilmesIpsum) for [Sublime Text Editor](http://www.sublimetext.com/)
+# DumbestIpsum (A bundle with TrumpIpsum + DilmesIpsum)
+
+## Plugin for [Sublime Text Editor](http://www.sublimetext.com/)
 
 Check out our <a href="http://www.victorlaerte.com/dumbest-ipsum/" target="_blank">GitHub Page</a>!
 
 An extension for Sublime Text 2 and 3! It allows you to insert the best Lorem Ipsum Generator in the editor via menu items or keyboard shortcuts.
 
-## Avaliables Ipsum
+### Avaliables Ipsum
 * Dilmês Ipsum - It uses some popular phrases from [Brazilian President Dilma Rousseff](https://en.wikipedia.org/wiki/Dilma_Rousseff)
 * Trump Ipsum - It uses some popular phrases from [USA President Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump)
 
@@ -16,7 +18,7 @@ Just press the shortcut key `Alt+Shift+D` to add Dilmes Ipsum text or `Alt+Shift
 
 Alternatively, you can also type `dilma`, `dilmes` or `trump` followed by a `TAB` so that paragraphs will be added.
 
-## Features
+### Features
 
 1. Randomly generates text from selection of phrases
 2. Leaves the inserted text un-selected, so you can insert some more straight away (rapid tapping to get as much lorem as you want)
@@ -24,9 +26,9 @@ Alternatively, you can also type `dilma`, `dilmes` or `trump` followed by a `TAB
 4. Works with multiple selection ranges
 5. Does not leave trailing spaces
 
-## Install
+### Install
 
-### Package Control
+#### Package Control
 
 The easiest way to install this is with [Package Control](https://packagecontrol.io/packages/Dumbest%20Ipsum).
 
