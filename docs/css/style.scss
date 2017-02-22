@@ -6,7 +6,14 @@ html {
 
 .head-a {
     background-color: $bg-a;
-    height: 500px;
+    background: linear-gradient(45deg, $bg-a 50%, lighten($bg-a, 10%) 10%, $bg-a 80%);
+    height: 790px;
+}
+
+.main-a {
+    position: relative;
+    top: -200px;
+    background-color: $bg-b;
 }
 
 .flex {
@@ -16,11 +23,49 @@ html {
     }
 }
 
+$gap: 15px;
+.no-gap {
+    margin: 0 !important;
+}
+
+.top-gap {
+    margin-top: $gap;
+}
+
+.bottom-gap {
+    margin-bottom: $gap;
+}
+
+.left-gap {
+    margin-left: $gap;
+}
+
+.right-gap {
+    margin-right: $gap;
+}
+
+.float-left {
+    float: left;
+}
+
+.logo-trump {
+    font-weight: 800;
+    margin-right: $gap * 2;
+    .logo-trump__ipsum {
+        color: #5630e2;
+    }
+}
+
+.container-a {
+    margin-top: $gap * 2;
+}
+
+$width-trump-caricature: 350px;
 .trump-caricature {
     position: relative;
-    top: 50px;
-    width: 283px;
+    width: $width-trump-caricature;
     height: 685px;
+    z-index: 1;
     .trump-caricature__pulpit,
     .trump-caricature__body {
         position: absolute;
@@ -33,4 +78,55 @@ html {
         top: 0;
         left: 0;
     }
+}
+
+.phrases {
+    color: #fff;
+    width: calc(100% - #{$width-trump-caricature});
+    .phrases__item {
+        margin-bottom: 10px;
+    }
+    @for $i from 1 through 6 {
+        .phrases__item:nth-child(#{$i}) {
+            animation-delay: $i * 0.1s;
+        }
+    }
+}
+
+.details {
+    width: $width-trump-caricature;
+    color: #fff;
+    position: relative;
+    top: 200px;
+    .details__item {
+        width: $width-trump-caricature;
+        &.details__item--fixed {
+            position: fixed;
+            top: 70px;
+        }
+    }
+}
+
+.cardboard {
+    width: calc(100% - #{$width-trump-caricature});
+    top: -50px;
+    position: relative;
+    background-color: #fff;
+    padding: $gap * 2;
+}
+
+.btn-custom {
+    &.btn-custom--is-active {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+$selection-color: #a2a2a2;
+::selection {
+    background: $selection-color;
+}
+
+::-moz-selection {
+    background: $selection-color;
 }

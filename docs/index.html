@@ -23,41 +23,100 @@
 <body ng-controller="mainCtrl" ng-cloak class="ng-cloak">
 
     <header class="head-a">
-        <div class="container flex flex--space-between">
+
+        <div class="navbar-fixed" ng-include="'tmpls/navbar.html'"></div>
+
+        <div class="container container-a flex flex--space-between">
             <div class="trump-caricature">
                 <div class="trump-caricature__body">
-                    <img ng-hide="bodyTrump.src" class="animated flipInY" src="img/head-trump-1.png" alt="">
-                    <img class="animated {{bodyTrump.animate}}" src="img/{{bodyTrump.src}}" alt="">
+                    <img ng-hide="trump.src" class="animated flipInY" src="img/head-trump-1.png" alt="">
+                    <img class="animated {{trump.animate}}" src="img/{{trump.src}}" alt="">
                 </div>
                 <div class="trump-caricature__pulpit">
                     <img src="img/pulpit.png" alt="">
                 </div>
             </div>
             <div class="phrases">
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(1); bodyTrump.animate = ''" ng-click="changePhrase(1)">1</a>
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(2); bodyTrump.animate = ''" ng-click="changePhrase(2)">2</a>
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(3); bodyTrump.animate = ''" ng-click="changePhrase(3)">3</a>
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(4); bodyTrump.animate = ''" ng-click="changePhrase(4)">4</a>
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(5); bodyTrump.animate = ''" ng-click="changePhrase(5)">5</a>
-                <a class="waves-effect waves-light btn" ng-mouseenter="changePhrase(6); bodyTrump.animate = ''" ng-click="changePhrase(6)">6</a>
-                <a class="waves-effect waves-light btn">copy</a>
+                <div class="bottom-gap">
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 1}" ng-mouseenter="changePhrase(1); trump.animate = ''" ng-click="changePhrase(1, true)">1</a>
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 2}" ng-mouseenter="changePhrase(2); trump.animate = ''" ng-click="changePhrase(2, true)">2</a>
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 3}" ng-mouseenter="changePhrase(3); trump.animate = ''" ng-click="changePhrase(3, true)">3</a>
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 4}" ng-mouseenter="changePhrase(4); trump.animate = ''" ng-click="changePhrase(4, true)">4</a>
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 5}" ng-mouseenter="changePhrase(5); trump.animate = ''" ng-click="changePhrase(5, true)">5</a>
+                    <a class="waves-effect waves-light btn btn-custom" ng-class="{'btn-custom--is-active' : trump.currentItem == 6}" ng-mouseenter="changePhrase(6); trump.animate = ''" ng-click="changePhrase(6, true)">6</a>
+                    <button id="btnCopy" class="waves-effect waves-light btn btn-custom" data-clipboard-target="#phrases" onblur="cleanText()">copy</button>
+                </div>
+                <div id="phrases" ng-bind-html="trump.phrase"></div>
             </div>
         </div>
+
     </header>
 
+    <main class="main-a">
+        <div class="container container-b flex">
+            <div class="details">
+                <div class="details__item" ng-include="'tmpls/details.html'"></div>
+            </div>
+            <div class="cardboard">
+                <div ng-include="'tmpls/readme.html'"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer" ng-include="'tmpls/footer.html'"></footer>
+
     <!--Angular jS-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="js/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="js/angularjs/angular.sanitize.js"></script>
     <script type="text/javascript" src="js/angularjs/app.js"></script>
     <script type="text/javascript" src="js/angularjs/controller.main.js"></script>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Clipboard-->
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script>
+        // copy to clipboard - clipboard.min.js
+        var btn = document.getElementById('btnCopy'),
+            clipboard = new Clipboard(btn),
+            cleanText;
+
+        clipboard.on('success', function(e) {
+            e.trigger.innerHTML = "copied";
+            e.trigger.classList.add("btn-custom--is-active");
+
+            cleanText = function() {
+                btn.innerHTML = "copy";
+                e.trigger.classList.remove("btn-custom--is-active")
+            }
+        });
+        clipboard.on('error', function(e) {
+            console.error(e);
+        });
+    </script>
     <!--Addthis-->
-    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-500ef8864eff892c"></script>-->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-500ef8864eff892c"></script>
     <!--Initalize Components Materializecss-->
-    <script></script>
+    <!--<script></script>-->
     <!--Google Analytics-->
-    <script></script>
+    <script>
+        < script >
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92462407-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    </script>
 </body>
 
 </html>
