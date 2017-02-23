@@ -1,10 +1,8 @@
 <a href="#readme" ></a>
 
-# DumbestIpsum (A bundle with TrumpIpsum + DilmesIpsum)
+# [DumbestIpsum (A bundle with TrumpIpsum + DilmesIpsum)](http://www.trumpipsum.org/)
 
 ## Plugin for [Sublime Text Editor](http://www.sublimetext.com/)
-
-Check out our <a href="http://www.victorlaerte.com/dumbest-ipsum/" target="_blank">GitHub Page</a>!
 
 An extension for Sublime Text 2 and 3! It allows you to insert the best Lorem Ipsum Generator in the editor via menu items or keyboard shortcuts.
 
