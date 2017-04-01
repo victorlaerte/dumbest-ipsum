@@ -60,7 +60,10 @@
             currentItem: ''
         }
 
-        $scope.changePhrase(6, true);
+        if (window.innerWidth < 769)
+            $scope.changePhrase(4, true);
+        else
+            $scope.changePhrase(6, true);
 
     }
 

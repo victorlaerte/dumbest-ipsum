@@ -4,4 +4,6 @@
 
 *.sublime-workspace
 
+*.log
+
 node_modules

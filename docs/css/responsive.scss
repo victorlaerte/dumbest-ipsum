@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+    .trump-caricature,
+    .details {
+        display: none;
+    }
+    .details-responsive {
+        display: block;
+    }
+    .phrases,
+    .cardboard {
+        width: 100%;
+    }
+    .logotipo-trump {
+        display: none;
+    }
+    #btnCopy {
+        width: 100%;
+    }
+    .phrases {
+        .group-btn-flex-responsive {
+            display: flex;
+            .btn-custom {
+                width: 100%;
+                margin: 0 3px 7px;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
